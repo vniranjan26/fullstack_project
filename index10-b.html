@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>LEARNING HUB</title>
+	<link rel="icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="style10.css"></link>
+    <script type="text/javascript">
+function changelink(){
+  if(document.getElementById("opt1").selected==true){window.open('index10.html')};
+if(document.getElementById("opt2").selected==true){window.open('index10-a.html')};
+if(document.getElementById("opt3").selected==true){window.open('index10-b.html')};
+if(document.getElementById("opt4").selected==true){window.open()};
+if(document.getElementById("opt5").selected==true){window.open()};
+}
+</script>
+</head>
+<body>
+    <div class="row">
+           <ul class="main-nav">
+           <li><a href="index-1.html"> HOME </a></li>
+           <li class="active"><a href=""> VIDEOES </a></li>
+           <li><a href="index-1a.html"> COURSE </a></li>
+           <li><a href="index-2.html"> TEST YOURSELF </a></li>
+           <li><a href=""> FAQ </a></li>
+           <li onclick="myFunction()"><a href="index.html"> LOGOUT</a></li>
+           <script>
+function myFunction() {
+  alert("LOGOUT ! Are you sure want to log out !");
+}
+</script>
+        </ul>   
+       </div>
+	<div class="box">
+    <table class="canvas">
+        <tr>
+            <td class="video" rowspan="2"><iframe width="600" height="410" src="https://www.youtube.com/embed/FkWSaaI3x5Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></td>
+            <td class="name">C.S.Learning Hub - Video Lecture
+                <p><h5 class="category"><select><option id="opt3">Web Designing (003)</option><option id="opt2">UI Designing (002)</option><option id="opt1">Graphic Designing (001)</option><option>Other 004</option><option>Othher 005</option></select> &nbsp;
+                <!--<input type="button" value="Go" onclick="changelink()" />-->
+                <button class="button" onclick="changelink()"><span>Go </span></button></h5>
+                <h5 class="range">  1/10</h5></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="list" valign="middle">
+                <section class="list">
+                <p>&nbsp 01. <a href="video\v1.mp4"><img src="img/wl1.jpg" width="100"> &nbsp Lecture-1 [UI Designing]</a></p><hr color="grey">
+                <p>&nbsp 02. <a href="video\v1.mp4"><img src="img/wl2.jpg" width="100"> &nbsp Lecture-2 [UI Designing]</a></p><hr color="grey">
+                <p>&nbsp 03. <a href="video\v1.mp4"><img src="img/wl3.jpg" width="100"> &nbsp Lecture-3 [UI Designing] </a></p><hr color="grey">
+                <p>&nbsp 04. <a href="video\v1.mp4"><img src="img/wl4.jpg" width="100"> &nbsp Lecture-4 [UI Designing] </a></p><hr color="grey">
+                <p>&nbsp 05. <a href="video\v1.mp4"><img src="img/wl5.jpg" width="100"> &nbsp Lecture-5 [UI Designing] </a></p><hr color="grey">
+                <p>&nbsp 06. <a href="video\v1.mp4"><img src="img/wl6.jpg" width="100"> &nbsp Lecture-6 [UI Designing] </a></p><hr color="grey">
+                <p>&nbsp 07. <a href="video\v1.mp4"><img src="img/wl7.jpg" width="100"> &nbsp Lecture-7 [UI Designing]</a></p><hr color="grey">
+                <p>&nbsp 08. <a href="video\v1.mp4"><img src="img/wl8.jpg" width="100"> &nbsp Lecture-8 [UI Designing]</a></p><hr color="grey">
+                <p>&nbsp 09. <a href="video\v1.mp4"><img src="img/wl9.jpg" width="100"> &nbsp Lecture-9 [UI Designing] </a></p><hr color="grey">
+                <p>&nbsp 10. <a href="video\v1.mp4"><img src="img/wl10.jpg" width="100"> &nbsp Lecture-10 [UI Designing] </a></p><hr color="grey">
+                </section>
+            </td>
+        </tr>
+    </table>
+    
+   </div>
+</body>
+</html>

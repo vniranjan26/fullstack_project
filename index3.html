@@ -1,0 +1,132 @@
+<html>
+<head>
+    <title>LEARNING HUB</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style3.css"></link>
+</head>
+<body>
+    <div class="row">
+           <ul class="main-nav">
+           <li><a href="index.html"> HOME </a></li>
+           <li class="active"><a href=""> LOGIN </a></li>
+           <li><a href="index.html#about"> ABOUT </a></li>
+           <li><a href="index.html#contact"> CONTACT </a></li>
+           <li><a href=""> FAQ </a></li>
+        </ul>   
+       </div>
+    <div class="login-page">
+    <div class="form">
+        <form class="register-form" onsubmit="return validate();">
+         <input type="text" placeholder="User Name" id="t1" />      
+         <input type="text" placeholder="Email Id" id="t4" />
+         <input type="Password" placeholder="Password" id="t2" />
+         <input type="Password" placeholder="Retype Password" id="t3" />
+         <button>Create</button>
+         <p class="message">Already registered? <a href="#">Login</a></p>
+        </form>
+        <form class="login-form" onsubmit="return validate();">
+            <input type="text" placeholder="User Name/Email Id"  />
+             <input type="Password" placeholder="Password"/>
+             <input type="Password" placeholder="Otp"/>
+             <button><a href="index-1a.html">Login</a></button>
+         <p class="message">Not registered? <a href="#">Register</a></p>
+        </form>
+    </div>  
+    </div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height:"toggle", opacity:"toggle"},  "slow");
+        });
+        /* validation */
+         function validate()
+      {
+         if( document.getElementById("t1").value== "")
+         {
+            alert( "Please provide your name!" );
+            return false;
+         }
+
+
+         if( document.getElementById("t2").value== "")
+         {
+            alert( "Please provide password" );
+            return false;
+         }
+            
+
+         if( document.getElementById("t3").value== "")
+         {
+            alert( "Retype Password");
+            return false;
+         }
+
+         if(t2.value!=t3.value)
+         {
+            alert("Password Mismatch, Provide same password");
+            return false;
+         }
+
+
+         var emailID = document.getElementById("t4").value;
+         var atpos = emailID.indexOf("@");
+         var dotpos = emailID.lastIndexOf(".");       
+         if (document.getElementById("t4").value == "" || atpos < 1 || ( dotpos < atpos+2 )) 
+         {
+            alert("Please enter correct email ID");
+            return false;
+         }
+
+
+         var option=document.getElementsByName('Gender');
+
+         if (!(option[0].checked || option[1].checked)) {
+             alert("Please Select Your Gender");
+             return false;
+         }
+
+
+         var abc = document.getElementById("t6").value;
+                
+         if( document.getElementById("t6").value == "")
+         {
+            alert( "Please provide zip code." );
+            return false;
+         }
+         if(abc<5)
+         {
+            alert("ZipCode cannot be less than 5 digits")
+            return false;
+         }
+
+         
+
+         
+         if( document.getElementById("t7").value == "-1" )
+         {
+            alert( "Please select country code" );
+            return false;
+         }
+
+
+         var num = document.getElementById("t8").value;
+         if( document.getElementById("t8").value == "")
+         {
+            alert( "Phone number cannot be left blank" );
+            return false;
+         }
+         if(num<10)
+         {
+            alert("Phone number cannot be less than 10 digits");
+            return false;
+         }
+
+
+         {
+            alert("form submitted successfully");
+         return( true );
+         }
+      }
+    </script>
+</body>
+</html>

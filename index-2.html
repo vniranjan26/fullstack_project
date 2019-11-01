@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>LEARNING HUB</title>
+	<link rel="icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="style-2.css">
+	<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Dosis">
+</head>
+<body>
+        <header>
+        	<div class="row">
+			<div class="logo">
+			 <img src="">	
+			</div>
+		   <ul class="main-nav">
+		   <li><a href="index-1-a.html"> HOME </a></li>
+		   <li class="active"><a href=""> TEST YOURSELF </a></li>
+		   <li><a href="index.html#about"> ABOUT </a></li>
+		   <li><a href="index.html#contact"> CONTACT </a></li>
+		   <li><a href=""> FAQ </a></li>
+	    </ul>	
+	   </div>
+        	<div class="hero">
+        		<p> This portal is closed right now. </p>
+        	<h1>NEW TEST AVILABLE IN</h1>
+        	<hr>
+              <p id="launch"></p>
+              <button> <a href="index4.html"> Register</a></button>
+              <button> <a href="quiz.html"> Demo Test</a></button>
+
+        	</div>
+        </header>
+</body>
+ <script>
+ 	   var countDownDate = new Date("november 27, 2019 00:00:00").getTime();
+ 	   var x = setInterval(function(){
+        
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000*60*60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var second = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("launch").innerHTML = days + "d " + hours + "h " + minutes + "m " + second + "s ";
+
+            if (distance < 0){
+            	clearInterval(x);
+            	document.getElementById("launch").innerHTML = "EXPIRED";
+            }
+
+ 	   }, 1000);
+ </script>
+</html>

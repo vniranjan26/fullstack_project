@@ -1,0 +1,129 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+header
+{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/services.jpg);
+	height: 40vh;
+	background-size: cover;
+	background-position: center;
+}
+.main-nav
+
+{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+
+}
+.main-nav li
+
+{
+	display: inline-block;
+
+}
+.main-nav li ul li
+{
+    display: none;
+    padding: 5px;
+    float: bottom;
+}
+.main-nav li:hover  ul li
+{
+	display:block;
+}
+.main-nav li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 12px;
+	font-family: "Roboto", "sans-serif";
+	font-size: 15px;
+	display: inline-block;
+}
+.main-nav li.active a
+{
+	border: 1px solid white;
+}
+.main-nav li a:hover
+{
+	border: 1px solid white;
+
+}
+.Heading h1
+{
+    text-align: center;
+    padding-top: 100px;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+.Heading h1::after
+{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+} 
+.container{
+
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    background: #D3D3D3;
+    margin-top: 20px;
+}
+
+.container ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container ul li{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    float:left;
+    list-style: none;
+    width:28%;
+    height:300px;
+    background: #eee;
+    margin :20px 0px 20px 55px; 
+    border:2px solid blue;
+    box-sizing: border-box;
+}
+/*---------------------*/
+.container:hover .bottom
+{
+    filter:blur(3px);
+    opacity: .5;
+    transform: scale(.98);
+    box-shadow: none;
+}
+.container:hover .bottom:hover
+{
+     transform:scale(1);
+  filter:blur(0px);
+  opacity:1;
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+}
+/*-------------*/
+.container ul li .bottom{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    background: black;    
+    text-align: center;
+    color:white;
+    font-size: 20px;
+   
+}
+
+@media screen and (max-width:1250px){
+    .container ul li{
+        width:40%;
+        margin-left: 40px;
+         
+    }

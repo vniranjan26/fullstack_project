@@ -1,0 +1,183 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+header
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/services.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+.main-nav
+{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+
+}
+.main-nav li
+{
+	display: inline-block;
+
+}
+.main-nav li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 12px;
+	font-family: "Roboto", "sans-serif";
+	font-size: 15px;
+}
+.main-nav li.active a
+{
+	border: 1px solid white;
+}
+.main-nav li a:hover
+{
+	border: 1px solid white;
+
+} 
+.logo img
+{
+	width: 300px;
+	height: auto;
+	float: left;
+	margin-left: 50;
+	margin-top: 50;
+}
+body
+{
+	font-family: monospace;
+}
+
+.hero
+{
+	position: absolute;
+	width: 1200px;
+	margin-left: 0;
+	margin-top: 0;
+}
+h1
+{
+	color: white;
+	text-transform: uppercase;
+	font-size: 50px;
+	text-align: center;
+	margin-top:400px;
+	margin-left: 350px;
+}
+.button
+{
+	margin-top: 30px;
+	margin-left: 590px;
+}
+.btn
+{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 15px;
+	text-transform: uppercase;
+
+}
+.btn-one
+{
+	background-color: darkorange;
+	font-family: "Roboto","sans-serif";
+}
+.
+.btn-two
+{
+	font-family: "Roboto","sans-serif";
+}
+.btn-two:hover
+{
+	background-color: darkorange;
+	transition: all 0.5s ease-in;
+}
+.btn-one:hover
+{
+	background-color: skyblue;
+	transition: all 0.5s ease-in;
+}
+/*------float icon-------*/
+.icons
+{
+	top: 50%;
+		right: 0;
+	transform: translatey(-50%);
+	position: fixed;
+	z-index: 100;
+}
+.icons ul
+{
+	padding: initial;
+}
+.icons ul li
+{
+	height: 30px;
+	width: 25px;
+	list-style-type: none;
+	padding-left: 12px;
+	padding-top: 6px;
+	margin-top: 5px;
+	/*color: #fff;
+	background: #000;/*
+   /* padding: 20px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;*/
+}
+.facebook
+{
+	background: #3b5998;
+	 color: white;
+}
+.youtube
+{
+	background: #ff0000;
+	 color: white;
+}
+.linkedin
+{
+	background: #007bb5;
+	 color: white;
+}
+.twitter
+{
+	background: #55acee;
+	 color: white;
+}.instagram
+{
+	background: #ff4800;
+	 color: white;
+}
+.icons ul li:hover
+{
+	padding-left: 25px;
+	width: 25px;
+	transition: 1s; 
+}
+#footer /* Footer coding*/
+{
+	margin-top: 5px;
+	background: #333;
+    color: #fff;
+    padding: 12px; 
+	text-align: center;
+	font-family: sans-serif;
+}
+.fa-heart-o
+{
+    margin: 3px;
+    color: red;
+}
+a
+{text-decoration: none!important;
+    color: #fff!important;}
